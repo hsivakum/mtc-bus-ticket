@@ -1,0 +1,59 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/simpleSwipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hariharansivakumar.tike.HistoryFragment">
+
+    <RelativeLayout
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:background="#FC9"
+    android:gravity="center" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:stretchColumns="1"
+            android:layout_height="wrap_content">
+
+        <TableRow
+            android:id="@+id/from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+
+            <TextView
+                android:id="@+id/filter"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_column="2"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="Filter"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+        </TableRow>
+
+        </TableLayout>
+
+</RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollableContents"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff"
+        android:layout_below="@id/header" >
+
+
+    </ScrollView>
+
+</RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

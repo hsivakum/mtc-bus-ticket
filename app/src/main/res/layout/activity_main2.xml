@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Main2Activity"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <!--Include a toolbar-->
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <!--Container of fragments-->
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.roughike.bottombar.BottomBar
+                android:id="@+id/bottomBar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bb_height"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+</LinearLayout>

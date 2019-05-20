@@ -1,0 +1,139 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hariharansivakumar.tike.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:stretchColumns="1"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:id="@+id/from"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/test">
+
+            <TextView
+                android:id="@+id/froms"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="From"
+                android:padding="15dip"
+                android:textSize="15dp"/>
+
+
+            <TextView
+                android:id="@+id/fromstop"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:padding="15dip"
+                android:text="Select Source"
+                android:textSize="15dp"/>
+
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="@color/white" />
+
+        <TableRow
+            android:id="@+id/to"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/test">
+
+            <TextView
+                android:id="@+id/tos"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:padding="15dip"
+                android:text="To"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tostop"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="left"
+                android:padding="15dip"
+                android:text="Select Destination"
+                android:textSize="15dp" />
+
+        </TableRow>
+
+
+        <View
+            android:layout_height="2dip"
+            android:background="@color/white" />
+
+        <TableRow
+            android:id="@+id/heads"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/test">
+
+            <TextView
+                android:id="@+id/people"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:padding="15dip"
+                android:text="No of Heads"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/headcount"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="left"
+                android:inputType="number"
+                android:padding="15dip"
+                android:hint="Enter Count"
+                android:textSize="15dp" />
+
+        </TableRow>
+
+
+        <View
+            android:layout_height="3dip"
+            android:background="@color/white" />
+
+        <TableRow
+            android:id="@+id/select"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryLight"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/loginbutton_selector"
+                android:textColor="#009688"
+                android:text="Book Ticket" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</FrameLayout>

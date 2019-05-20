@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center"
+    tools:context="com.example.hariharansivakumar.tike.AddMoney">
+
+    <TextView
+        android:id="@+id/titleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Add Money To Wallet"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/addmoney1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleLabel"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Enter Amount"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/getGate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/addmoney1"
+        android:layout_alignStart="@+id/addmoney1"
+        android:layout_below="@+id/addmoney1"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="23dp"
+        android:text="Add Money" />
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hariharansivakumar.tike.FilterActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <TextView
+            android:id="@+id/amountLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="45dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="57dp"
+            android:text="Amount"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/amountLabel"
+            android:layout_marginEnd="36dp"
+            android:layout_marginRight="36dp" />
+
+        <TextView
+            android:id="@+id/dateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/amountLabel"
+            android:layout_alignStart="@+id/amountLabel"
+            android:layout_below="@+id/amountLabel"
+            android:layout_marginTop="37dp"
+            android:text="Date"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spinner"
+            android:layout_alignStart="@+id/spinner"
+            android:layout_alignTop="@+id/dateLabel" />
+
+        <TextView
+            android:id="@+id/statusLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/dateLabel"
+            android:layout_alignStart="@+id/dateLabel"
+            android:layout_below="@+id/dateLabel"
+            android:layout_marginTop="36dp"
+            android:text="Status"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spinner2"
+            android:layout_alignStart="@+id/spinner2"
+            android:layout_alignTop="@+id/statusLabel" />
+
+        <TextView
+            android:id="@+id/headsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/statusLabel"
+            android:layout_alignStart="@+id/statusLabel"
+            android:layout_below="@+id/statusLabel"
+            android:layout_marginTop="36dp"
+            android:text="Heads"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/spinner4"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spinner3"
+            android:layout_alignStart="@+id/spinner3"
+            android:layout_alignTop="@+id/headsLabel" />
+
+        <Button
+            android:id="@+id/btnGetMoreResults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="Apply" />
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

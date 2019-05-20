@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hariharansivakumar.tike.ShowTicket">
+
+    <TextView
+        android:id="@+id/fromLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="36dp"
+        android:text="From"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fromLabel"
+        android:layout_marginLeft="104dp"
+        android:layout_marginStart="104dp"
+        android:layout_toEndOf="@+id/fromLabel"
+        android:layout_toRightOf="@+id/fromLabel"
+        android:text="TextView"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/toLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fromLabel"
+        android:layout_alignStart="@+id/fromLabel"
+        android:layout_below="@+id/fromLabel"
+        android:layout_marginTop="22dp"
+        android:text="To"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/toLabel"
+        android:layout_alignLeft="@+id/from"
+        android:layout_alignStart="@+id/from"
+        android:text="TextView"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/amountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/toLabel"
+        android:layout_alignStart="@+id/toLabel"
+        android:layout_below="@+id/toLabel"
+        android:layout_marginTop="22dp"
+        android:text="Amount"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/amountLabel"
+        android:layout_alignLeft="@+id/to"
+        android:layout_alignStart="@+id/to"
+        android:text="TextView"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/dateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/amountLabel"
+        android:layout_alignStart="@+id/amountLabel"
+        android:layout_below="@+id/amountLabel"
+        android:layout_marginTop="22dp"
+        android:text="Date"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/dates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dateLabel"
+        android:layout_alignLeft="@+id/amount"
+        android:layout_alignStart="@+id/amount"
+        android:text="TextView"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="230dp"
+        android:background="@android:color/black"
+        android:id="@+id/View"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/View">
+
+        <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/dateLabel"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/dateLabel"
+        android:layout_marginBottom="25dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    </LinearLayout>
+
+</RelativeLayout>
